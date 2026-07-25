@@ -1,20 +1,18 @@
 "use client";
 
 import { TypeAnimation } from "react-type-animation";
+import { portfolio } from "@/data/portfolio";
 
 export default function TypingText() {
+  const sequence: (string | number)[] = [];
+
+  portfolio.roles.forEach((role) => {
+    sequence.push(role, 2000);
+  });
+
   return (
     <TypeAnimation
-      sequence={[
-        "Data Analyst",
-        2000,
-        "Machine Learning Engineer",
-        2000,
-        "Business Intelligence Developer",
-        2000,
-        "Published IEEE Researcher",
-        2000,
-      ]}
+      sequence={sequence}
       wrapper="span"
       speed={50}
       repeat={Infinity}

@@ -1,25 +1,27 @@
 export const portfolio = {
-  name: "Bikash Sagar Koiri",
-
   firstName: "Bikash",
 
   lastName: "Sagar Koiri",
 
   roles: [
     "Data Analyst",
-    "Machine Learning Engineer",
     "Business Intelligence Developer",
+    "Machine Learning Engineer",
     "Published IEEE Researcher",
   ],
 
   description:
-    "Transforming complex data into actionable business insights through analytics, machine learning, and visualization.",
+    "Passionate about transforming raw data into meaningful insights through analytics, machine learning, and interactive dashboards.",
 
   social: {
     github: "https://github.com/Bikash07-git",
-    linkedin: "YOUR_LINKEDIN_URL",
+    linkedin: "https://www.linkedin.com/in/bikashsk26/",
     email: "sagarbikash97@gmail.com",
   },
 
-  resume: "/resume.pdf",
+  location: "Durgapur, West Bengal",
+
+   profileImage: "/images/Chatgpt edited photo.png",
+
+  resume: "/resume/Bikash Koiri Resume_MT.pdf",
 };
