@@ -11,9 +11,9 @@ import { portfolio } from "@/data/portfolio";
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-24">
+    <section id="home" className="min-h-screen flex items-center pt-20">
       <Container>
-        <div className="grid min-h-[calc(100vh-6rem)] items-center gap-12 lg:grid-cols-2">
+        <div className="grid items-center gap-20 lg:grid-cols-2">
           
           <div>
             <Greeting />
