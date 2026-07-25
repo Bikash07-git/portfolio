@@ -21,7 +21,7 @@ export const portfolio = {
 
   location: "Durgapur, West Bengal",
 
-   profileImage: "/images/Chatgpt edited photo.png",
+   profileImage: "/images/profile.png",
 
-  resume: "/resume/Bikash Koiri Resume_MT.pdf",
+  resume: "/resume/resume.pdf",
 };

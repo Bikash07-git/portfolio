@@ -1,10 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { portfolio } from "@/data/portfolio";
 
 export default function SocialLinks() {
   return (
-    <div className="mt-8 flex items-center gap-6 text-slate-400">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.8 }}
+      className="mt-8 flex items-center gap-6 text-slate-400"
+    >
       <a
         href={portfolio.social.github}
         target="_blank"
@@ -29,6 +37,6 @@ export default function SocialLinks() {
       >
         <MdEmail size={28} />
       </a>
-    </div>
+    </motion.div>
   );
 }

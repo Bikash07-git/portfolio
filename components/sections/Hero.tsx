@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Container from "../ui/container";
 import Greeting from "../hero/Greeting";
 import TypingText from "../hero/TypingText";
@@ -17,9 +20,14 @@ export default function Hero() {
 
             <TypingText />
 
-            <p className="mt-6 max-w-xl text-slate-400">
-              {portfolio.description}
-            </p>
+            <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="mt-6 max-w-xl text-slate-400"
+            >
+                {portfolio.description}
+            </motion.p>
 
             <HeroButtons />
 
