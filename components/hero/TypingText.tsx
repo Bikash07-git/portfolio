@@ -6,7 +6,7 @@ import { portfolio } from "@/data/portfolio";
 const sequence: (string | number)[] = [];
 
 portfolio.roles.forEach((role) => {
-  sequence.push(role, 2000);
+  sequence.push(role, 1800);
 });
 
 export default function TypingText() {
@@ -14,7 +14,7 @@ export default function TypingText() {
     <TypeAnimation
       sequence={sequence}
       wrapper="span"
-      speed={60}
+      speed={55}
       repeat={Infinity}
       className="mt-8 block text-4xl font-bold text-cyan-400"
     />

@@ -6,13 +6,13 @@ import { portfolio } from "@/data/portfolio";
 
 export default function HeroContent() {
   return (
-    <div className="max-w-xl">
+    <div className="max-w-2xl">
 
       <Greeting />
 
       <TypingText />
 
-      <p className="mt-8 text-lg leading-8 text-slate-400">
+      <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
         {portfolio.description}
       </p>
 
@@ -20,35 +20,35 @@ export default function HeroContent() {
 
       <SocialLinks />
 
-      <div className="mt-14 grid grid-cols-3 gap-8">
+      <div className="mt-16 grid grid-cols-3 gap-10">
 
         <div>
-          <h3 className="text-3xl font-bold text-cyan-400">
-            4+
-          </h3>
+          <h2 className="text-4xl font-bold text-white">
+            10+
+          </h2>
 
-          <p className="mt-2 text-sm text-slate-400">
+          <p className="mt-2 text-slate-400">
             Projects
           </p>
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-cyan-400">
-            1
-          </h3>
+          <h2 className="text-4xl font-bold text-white">
+            IEEE
+          </h2>
 
-          <p className="mt-2 text-sm text-slate-400">
-            Research Works
+          <p className="mt-2 text-slate-400">
+            Research Paper
           </p>
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-cyan-400">
-            15+
-          </h3>
+          <h2 className="text-4xl font-bold text-white">
+            M.Tech
+          </h2>
 
-          <p className="mt-2 text-sm text-slate-400">
-            Technologies
+          <p className="mt-2 text-slate-400">
+            Computer Science
           </p>
         </div>
 

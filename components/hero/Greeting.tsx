@@ -6,15 +6,15 @@ import { portfolio } from "@/data/portfolio";
 export default function Greeting() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -40 }}
+      initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 0.8 }}
     >
-      <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-400">
-        👋 Welcome to my Portfolio
+      <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-sm font-medium text-cyan-400">
+        👋 Welcome to my portfolio
       </span>
 
-      <h1 className="mt-8 text-6xl font-black leading-[0.9] tracking-tight text-white lg:text-8xl">
+      <h1 className="mt-8 text-7xl font-black leading-[0.9] tracking-tight text-white lg:text-8xl">
         {portfolio.firstName}
         <br />
 
