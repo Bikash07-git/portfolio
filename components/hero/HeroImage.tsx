@@ -11,29 +11,28 @@ export default function HeroImage() {
       initial={{ opacity: 0, x: 60 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      whileHover={{
-  scale: 1.05,
-  rotate: 1,
-}}
-      className="relative flex items-center justify-center w-[420px] h-[420px] mx-auto"
+      whileHover={{ scale: 1.03 }}
+      className="relative mx-auto flex h-[520px] w-[520px] items-center justify-center"
     >
-      <div className="absolute w-80 h-80 rounded-full bg-cyan-500/20 blur-3xl animate-pulse" />
+      <div className="absolute h-[380px] w-[380px] rounded-full bg-cyan-500/20 blur-[120px]" />
 
-      <div className="relative overflow-hidden rounded-full border-4 border-cyan-500/40 shadow-[0_0_70px_rgba(6,182,212,0.35)]">
+      <div className="absolute h-[360px] w-[360px] rounded-full border border-cyan-500/20 animate-pulse" />
+
+      <div className="relative overflow-hidden rounded-full border-4 border-cyan-400/40 shadow-[0_0_80px_rgba(34,211,238,0.35)]">
         <Image
           src={portfolio.profileImage}
           alt={portfolio.firstName}
-          width={320}
-          height={320}
+          width={340}
+          height={340}
           priority
-          className="w-80 h-80 object-cover"
+          className="h-[340px] w-[340px] object-cover"
         />
       </div>
 
-      <SkillBadge label="Python" className="top-16 left-4" />
-      <SkillBadge label="SQL" className="top-12 right-2" />
-      <SkillBadge label="Power BI" className="bottom-16 right-4" />
-      <SkillBadge label="Machine Learning" className="bottom-16 left-0" />
+      <SkillBadge label="Python" className="left-4 top-24" />
+      <SkillBadge label="SQL" className="right-8 top-20" />
+      <SkillBadge label="Power BI" className="right-6 bottom-24" />
+      <SkillBadge label="Machine Learning" className="left-0 bottom-24" />
     </motion.div>
   );
 }

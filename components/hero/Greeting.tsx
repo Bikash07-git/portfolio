@@ -10,15 +10,15 @@ export default function Greeting() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
     >
-      <p className="uppercase tracking-[0.35em] text-cyan-400">
-       👋 Hello, I'm
-      </p>
+      <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-400">
+        👋 Welcome to my Portfolio
+      </span>
 
-      <h1 className="mt-4 text-6xl font-black leading-none tracking-tight text-white md:text-8xl">
+      <h1 className="mt-8 text-6xl font-black leading-[0.9] tracking-tight text-white lg:text-8xl">
         {portfolio.firstName}
         <br />
 
-        <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-cyan-400 via-sky-500 to-indigo-500 bg-clip-text text-transparent">
           {portfolio.lastName}
         </span>
       </h1>
