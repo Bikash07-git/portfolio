@@ -3,60 +3,54 @@
 import Container from "../ui/container";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Research", href: "#research" },
-  { name: "Contact", href: "#contact" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Research", href: "#research" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/50 bg-[#050816]/80 backdrop-blur-xl">
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
       <Container>
-        <nav className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
 
-          {/* Logo */}
           <a
             href="#home"
-            className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-lg font-bold text-white"
+            className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-indigo-600 text-xl font-bold text-white shadow-lg shadow-cyan-500/20"
           >
             BK
           </a>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a
-                  href={link.href}
-                  className="text-sm font-medium text-slate-300 transition hover:text-white"
-                >
-                  {link.name}
-                </a>
-              </li>
+          <nav className="hidden items-center gap-10 md:flex">
+            {navLinks.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-sm font-medium text-slate-300 transition hover:text-cyan-400"
+              >
+                {item.label}
+              </a>
             ))}
-          </ul>
+          </nav>
 
-          {/* Right Side */}
-          <div className="flex items-center gap-3">
-
-            <button
-              className="hidden rounded-xl border border-slate-700 px-4 py-2 text-sm transition hover:border-cyan-500 md:block"
+          <div className="flex items-center gap-4">
+            <a
+              href="/resume/resume.pdf"
+              target="_blank"
+              className="rounded-full border border-cyan-500/30 px-5 py-2 text-sm font-medium text-white transition hover:bg-cyan-500 hover:text-white"
             >
               Resume
-            </button>
+            </a>
 
-            <button
-              className="rounded-xl border border-slate-700 p-2 transition hover:border-cyan-500"
-            >
+            <button className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-slate-900">
               🌙
             </button>
-
           </div>
 
-        </nav>
+        </div>
       </Container>
     </header>
   );

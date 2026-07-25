@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-32"
+      className="py-40"
     >
       <Container>
 

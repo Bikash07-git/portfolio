@@ -16,7 +16,7 @@ export default function TypingText() {
       wrapper="span"
       speed={50}
       repeat={Infinity}
-      className="mt-6 block text-2xl font-semibold text-cyan-400"
+      className="mt-8 block text-3xl font-bold text-cyan-400"
     />
   );
 }

@@ -11,7 +11,10 @@ export default function HeroImage() {
       initial={{ opacity: 0, x: 60 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{
+  scale: 1.05,
+  rotate: 1,
+}}
       className="relative flex items-center justify-center w-[420px] h-[420px] mx-auto"
     >
       <div className="absolute w-80 h-80 rounded-full bg-cyan-500/20 blur-3xl animate-pulse" />

@@ -11,10 +11,10 @@ export default function Greeting() {
       transition={{ duration: 0.7 }}
     >
       <p className="uppercase tracking-[0.35em] text-cyan-400">
-        Hello, I'm
+       👋 Hello, I'm
       </p>
 
-      <h1 className="mt-4 text-5xl font-extrabold leading-tight text-white md:text-7xl">
+      <h1 className="mt-4 text-6xl font-black leading-none tracking-tight text-white md:text-8xl">
         {portfolio.firstName}
         <br />
 
